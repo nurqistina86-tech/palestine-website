@@ -1,300 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Palestine - History, Culture and Heritage</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Dialog</title>
 </head>
 
 <body>
-    <header>
 
-        <h1>Palestine</h1>
+    <h1>JavaScript Alert, Confirm and Prompt</h1>
 
-        <p>
-            Discover the history, culture and beauty of Palestine
-        </p>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#introduction">Introduction</a>
-            <a href="#governorates">Governorates</a>
-            <a href="#culture">Culture</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <!-- ALERT -->
+    <h2>1. Alert</h2>
 
-    </header>
-    <section id="home" class="hero">
+    <button onclick="showAlert()">
+        Show Alert
+    </button>
 
-        <div class="hero-content">
 
-            <h2>Welcome to Palestine</h2>
+    <!-- CONFIRM -->
+    <h2>2. Confirm</h2>
 
-            <p>
-                Explore the history, culture, traditions and beautiful places
-                of Palestine.
-            </p>
+    <button onclick="showConfirm()">
+        Show Confirm
+    </button>
 
-            <a href="#introduction" class="button">
-                Learn More
-            </a>
 
-        </div>
+    <!-- PROMPT -->
+    <h2>3. Prompt</h2>
 
-    </section>
-    <section id="introduction" class="section">
+    <button onclick="showPrompt()">
+        Show Prompt
+    </button>
 
-        <h2>Introduction to Palestine</h2>
 
-        <div class="intro-content">
+    <script>
 
-            <div class="intro-text">
+        // ALERT
+        function showAlert() {
+            window.alert("It's between 0 and 10");
+        }
 
-                <p>
-                    Palestine is a historic land with a rich history,
-                    culture and heritage. It is home to many important
-                    historical and religious places.
-                </p>
 
-                <p>
-                    Palestine is known for its beautiful cities,
-                    traditional food, ancient architecture and strong
-                    cultural traditions.
-                </p>
+        // CONFIRM
+        function showConfirm() {
 
-                <a href="#governorates" class="button">
-                    Explore Governorates
-                </a>
+            let result = window.confirm("Horaaa!! You guessed it.");
 
-            </div>
+            if (result == true) {
+                alert("You pressed OK");
+            } else {
+                alert("You pressed Cancel");
+            }
 
+        }
 
-            <div class="intro-image">
 
-                <img src="images/mosque.jpg"
-                     alt="Mosque in Palestine">
+        // PROMPT
+        function showPrompt() {
 
-            </div>
+            let number = window.prompt(
+                "Please enter a number between 1-10"
+            );
 
-        </div>
+            alert("You entered: " + number);
 
-    </section>
-    <section id="governorates" class="section">
+        }
 
-        <h2>Palestinian Governorates</h2>
-
-        <p class="section-description">
-            Palestine has several governorates with unique history,
-            culture and important places.
-        </p>
-
-        <div class="cards">
-            <div class="card">
-
-                <img src="images/jerusalem.jpg"
-                     alt="Jerusalem">
-
-                <h3>Jerusalem</h3>
-
-                <p>
-                    Jerusalem is a historic city known for its
-                    important religious and cultural sites.
-                </p>
-
-            </div>
-            <div class="card">
-
-                <img src="images/palestine-flag.jpg"
-                     alt="Palestine Flag">
-
-                <h3>Gaza</h3>
-
-                <p>
-                    Gaza is a coastal region with a long history
-                    and rich Palestinian culture.
-                </p>
-
-            </div>
-            <div class="card">
-
-                <img src="images/mosque.jpg"
-                     alt="Palestinian Mosque">
-
-                <h3>Hebron</h3>
-
-                <p>
-                    Hebron is an ancient city famous for its
-                    historical places and traditional markets.
-                </p>
-
-            </div>
-            <div class="card">
-
-                <img src="images/jaffa.jpg"
-                     alt="Palestinian City">
-
-                <h3>Nablus</h3>
-
-                <p>
-                    Nablus is known for its historic old city,
-                    traditional food and cultural heritage.
-                </p>
-
-            </div>
-            <div class="card">
-
-                <img src="images/mosque.jpg"
-                     alt="Palestinian Heritage">
-
-                <h3>Bethlehem</h3>
-
-                <p>
-                    Bethlehem is a historic city with important
-                    religious and cultural landmarks.
-                </p>
-
-            </div>
-            <div class="card">
-
-                <img src="images/jerusalem.jpg"
-                     alt="Palestinian Landscape">
-
-                <h3>Jericho</h3>
-
-                <p>
-                    Jericho is one of the world's oldest cities
-                    and has a very long history.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-    <section id="culture" class="section culture-section">
-
-        <h2>Palestinian Culture</h2>
-
-        <div class="culture-content">
-            <div class="culture-box">
-
-                <h3>Traditional Food</h3>
-
-                <p>
-                    Palestinian cuisine includes traditional dishes
-                    such as maqluba, musakhan, falafel and hummus.
-                </p>
-
-            </div>
-            <div class="culture-box">
-
-                <h3>Traditional Clothing</h3>
-
-                <p>
-                    Palestinian traditional clothing includes
-                    beautiful embroidered dresses called thobes.
-                </p>
-
-            </div>
-            <div class="culture-box">
-
-                <h3>Traditional Music</h3>
-
-                <p>
-                    Music and traditional dances such as Dabke
-                    are important parts of Palestinian culture.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-    <section id="gallery" class="section">
-
-        <h2>Palestine Gallery</h2>
-
-        <p class="section-description">
-            Some beautiful images representing Palestine.
-        </p>
-
-
-        <div class="gallery">
-
-            <img src="images/mosque.jpg"
-                 alt="Palestinian Mosque">
-
-            <img src="images/jerusalem.jpg"
-                 alt="Jerusalem">
-
-            <img src="images/palestine-flag.jpg"
-                 alt="Palestine Flag">
-
-            <img src="images/jaffa.jpg"
-                 alt="Palestinian City">
-
-        </div>
-
-    </section>
-    <section id="contact" class="section">
-
-        <h2>Contact Us</h2>
-
-        <p>
-            If you would like to learn more about Palestine,
-            you can contact us using the form below.
-        </p>
-
-
-        <form>
-
-            <label for="name">Name:</label>
-
-            <input type="text"
-                   id="name"
-                   name="name"
-                   placeholder="Enter your name">
-
-
-            <label for="email">Email:</label>
-
-            <input type="email"
-                   id="email"
-                   name="email"
-                   placeholder="Enter your email">
-
-
-            <label for="message">Message:</label>
-
-            <textarea id="message"
-                      name="message"
-                      rows="5"
-                      placeholder="Write your message"></textarea>
-
-
-            <button type="submit">
-                Submit
-            </button>
-
-        </form>
-
-    </section>
-    <footer>
-
-        <p>
-            &copy; 2026 Palestine Website
-        </p>
-
-        <a href="#home">
-            Back to Top
-        </a>
-
-    </footer>
+    </script>
 
 </body>
-
 </html>
