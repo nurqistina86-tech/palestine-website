@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Dialog</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Alert, Confirm and Prompt</h1>
+
+    <!-- ALERT -->
+    <h2>1. Alert</h2>
+
+    <button onclick="showAlert()">
+        Show Alert
+    </button>
+
+
+    <!-- CONFIRM -->
+    <h2>2. Confirm</h2>
+
+    <button onclick="showConfirm()">
+        Show Confirm
+    </button>
+
+
+    <!-- PROMPT -->
+    <h2>3. Prompt</h2>
+
+    <button onclick="showPrompt()">
+        Show Prompt
+    </button>
+
+
+    <script>
+
+        // ALERT
+        function showAlert() {
+            window.alert("It's between 0 and 10");
+        }
+
+
+        // CONFIRM
+        function showConfirm() {
+
+            let result = window.confirm("Horaaa!! You guessed it.");
+
+            if (result == true) {
+                alert("You pressed OK");
+            } else {
+                alert("You pressed Cancel");
+            }
+
+        }
+
+
+        // PROMPT
+        function showPrompt() {
+
+            let number = window.prompt(
+                "Please enter a number between 1-10"
+            );
+
+            alert("You entered: " + number);
+
+        }
+
+    </script>
+
+</body>
+</html>
